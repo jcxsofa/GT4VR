@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CMake Configure",
+      "type": "cmake",
+      "command": "configure",
+      "problemMatcher": [],
+      "detail": "CMake configure"
+    },
+    {
+      "label": "CMake Build",
+      "type": "cmake",
+      "command": "build",
+      "problemMatcher": ["$msCompile"],
+      "detail": "CMake build"
+    },
+    {
+      "label": "CMake Clean",
+      "type": "cmake",
+      "command": "clean",
+      "problemMatcher": [],
+      "detail": "CMake clean"
+    },
+    {
+      "label": "Build Release",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "--build",
+        "build",
+        "--config",
+        "Release",
+        "-j",
+        "8"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$msCompile"]
+    }
+  ]
+}

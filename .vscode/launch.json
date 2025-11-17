@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug PCSX2",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/pcsx2-qt/Release/pcsx2-qt.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/build/pcsx2-qt/Release",
+      "environment": [],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Debug Head Tracking Bridge",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/head-tracking-bridge/build/gt4_vr_bridge.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/head-tracking-bridge/build",
+      "environment": [],
+      "console": "integratedTerminal"
+    }
+  ]
+}

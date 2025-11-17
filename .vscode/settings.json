@@ -1,0 +1,22 @@
+{
+  "cmake.configureOnOpen": false,
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "cmake.configureSettings": {
+    "CMAKE_BUILD_TYPE": "Release"
+  },
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "files.associations": {
+    "*.h": "cpp",
+    "*.cpp": "cpp",
+    "*.inl": "cpp"
+  },
+  "editor.formatOnSave": false,
+  "cmake.generator": "Ninja",
+  "terminal.integrated.env.windows": {
+    "PATH": "${env:PATH}"
+  },
+  "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "cmake.parallelJobs": 8
+}
